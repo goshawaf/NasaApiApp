@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="3jZ-1V-j2N" customClass="WeekPhotoCell" customModule="NasaApiApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QrR-lw-czs">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GKz-Wr-aDB">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="GKz-Wr-aDB" secondAttribute="bottom" id="Dm4-kQ-2K3"/>
+                    <constraint firstItem="GKz-Wr-aDB" firstAttribute="top" secondItem="QrR-lw-czs" secondAttribute="top" id="GLe-op-wAc"/>
+                    <constraint firstItem="GKz-Wr-aDB" firstAttribute="leading" secondItem="QrR-lw-czs" secondAttribute="leading" id="PD1-uv-Ujo"/>
+                    <constraint firstAttribute="trailing" secondItem="GKz-Wr-aDB" secondAttribute="trailing" id="oc3-88-njs"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="140" height="140"/>
+            <connections>
+                <outlet property="weekPhoto" destination="GKz-Wr-aDB" id="Koc-5B-zsP"/>
+            </connections>
+            <point key="canvasLocation" x="-45.801526717557252" y="-180.98591549295776"/>
+        </collectionViewCell>
+    </objects>
+</document>

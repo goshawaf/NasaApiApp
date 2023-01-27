@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Iz1-bU-yjz" customClass="PhotoCell" customModule="NasaApiApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2mY-Ik-JYN">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a5b-h4-Z1G">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a5b-h4-Z1G" firstAttribute="leading" secondItem="2mY-Ik-JYN" secondAttribute="leading" id="OlH-dp-JNZ"/>
+                    <constraint firstItem="a5b-h4-Z1G" firstAttribute="top" secondItem="2mY-Ik-JYN" secondAttribute="top" id="kLx-3G-Gup"/>
+                    <constraint firstAttribute="bottom" secondItem="a5b-h4-Z1G" secondAttribute="bottom" id="rgc-Af-Mjz"/>
+                    <constraint firstAttribute="trailing" secondItem="a5b-h4-Z1G" secondAttribute="trailing" id="sdL-nL-mnz"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="128" height="132"/>
+            <connections>
+                <outlet property="monthPhoto" destination="a5b-h4-Z1G" id="rXz-2s-6Ej"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="3.5211267605633805"/>
+        </collectionViewCell>
+    </objects>
+</document>
