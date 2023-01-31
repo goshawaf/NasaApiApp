@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#about me">Credits</a> •
+  <a href="#about me">About me</a> •
   <a href="#connect with me">Related</a> •
 </p>
 
