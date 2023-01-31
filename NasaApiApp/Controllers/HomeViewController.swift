@@ -172,7 +172,7 @@ class HomeViewController: UIViewController {
     
     @objc func checkTextFieldText(_ textField: UITextField) {
         dateFormatter.dateFormat = "YYYY-MM-DD"
-        if let todaysDate = dateFormatter.date(from: textField.text ?? "no date") {
+        if let _ = dateFormatter.date(from: textField.text ?? "no date") {
             if textField.text! < datesManager.getTodaysDate() && textField.text! > "1995-06-16"{
                 autoEnabledAlertAction?.isEnabled = true
             }
