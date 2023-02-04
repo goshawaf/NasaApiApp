@@ -1,4 +1,4 @@
-<h4 align="center">Simple app to study working with api, segues and collections.</h4>
+<h4 align="center">An app to study working with api, segues and collections.</h4>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
